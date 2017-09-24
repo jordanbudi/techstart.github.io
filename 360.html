@@ -2,24 +2,25 @@
     <head>
         <title>360</title>
         <style>
-        .myIframe {
-             position: relative;
-             height: 0;
-             overflow: auto; 
-             -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
-        } 
-        .myIframe iframe {
-             position: absolute;
-             top: 0;
-             left: 0;
-             width: 100%;
-             height: 100%;
+        .container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+        .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
         </style>
     </head>
     <body>      
-         <div class="myIframe"> 
-           <iframe src = https://rise.articulate.com/share/IB189EOy12_O5y2jAjWojFmLmM8L7y31#/?_k=saa152> </iframe> 
-        </div>    
+         <div class="container">
+        <iframe src="//www.youtube.com/embed/yCOY82UdFrw" 
+        frameborder="0" allowfullscreen class="video"></iframe>
+        </div>  
     </body>
 </html>
