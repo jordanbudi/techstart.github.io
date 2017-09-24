@@ -1,9 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
     <head>
         <title>360</title>
+        <style>
+        .myIframe {
+             position: relative;
+             padding-bottom: 65.25%;
+             padding-top: 30px;
+             height: 0;
+             overflow: auto; 
+             -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
+             border: solid black 1px;
+        } 
+        .myIframe iframe {
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+        }
+        </style>
     </head>
     <body>      
-        <div style="display:block;position:absolute;top:0px;"> <iframe seamless allowFullScreen src="https://rise.articulate.com/share/IB189EOy12_O5y2jAjWojFmLmM8L7y31#/?_k=saa152" frameborder="0" scrolling="no" style="width:100%; height:100%; position:relative; top:0px; left:0px; bottom:0px; right:0px; border:none; margin:0; padding:0;" /> /div>
+         <div class="myIframe"> 
+           <iframe src = https://rise.articulate.com/share/IB189EOy12_O5y2jAjWojFmLmM8L7y31#/?_k=saa152> </iframe> 
+        </div>    
     </body>
 </html>
